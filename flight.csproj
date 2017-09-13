@@ -5,6 +5,11 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="kzkm-engine\test\**" />
+    <EmbeddedResource Remove="kzkm-engine\test\**" />
+    <None Remove="kzkm-engine\test\**" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="FreeImage-dotnet-core" Version="4.0.3" />
     <PackageReference Include="OpenTK.NETCore" Version="1.1.2749.6433" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.3.0" />
