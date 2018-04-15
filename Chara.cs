@@ -3,6 +3,7 @@ namespace flight
     public class Chara : KzkmEngine.Worker
     {
         KzkmEngine.Mesh m = new KzkmEngine.Mesh();
+        double x = 0;
         public Chara()
         {
             System.Console.WriteLine("fuga");
@@ -10,11 +11,12 @@ namespace flight
         }
         override public void Update()
         {
+            x += 0.1;
         }
 
         override public void Draw()
         {
-            m.Render();
+            m.Render(x, 0, 0);
         }
     }
 }
