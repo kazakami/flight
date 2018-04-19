@@ -3,6 +3,7 @@
 # 使い方
 トップディレクトリ内にkzkm-engineのディレクトリをおいてください
 ```
+$ dotnet restore
 $ dotnet run
 ```
 で実行できます
